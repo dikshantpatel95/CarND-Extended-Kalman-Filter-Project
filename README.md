@@ -62,13 +62,13 @@ Connected!!!
 As you can see, the simulator connect to it right away.
 ####The following is an image of the simulator: running with dataset 1
 
-<img src="https://github.com/dikshantpatel95/CarND-Advanced-Lane-Lines/blob/master/undistorted_imgs/calibration3.jpg>
+<img src="https://github.com/dikshantpatel95/CarND-Extended-Kalman-Filter-Project/blob/master/images/data1.JPG">
 
 
 ####The following is an image of the simulator: running with dataset 2
 
 
-<img src="https://github.com/dikshantpatel95/CarND-Advanced-Lane-Lines/blob/master/undistorted_imgs/calibration3.jpg>
+<img src="https://github.com/dikshantpatel95/CarND-Extended-Kalman-Filter-Project/blob/master/images/data2.JPG">
           
           
    
@@ -86,8 +86,8 @@ The code compiles without errors. I did change the [CMackeLists.txt](./CMakeList
 
 The EKF accuracy was:
 
-- Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
-- Dataset 2 : RMSE <= [0.0726, 0.0965, 0.4216, 0.4932]
+- Dataset 1 : RMSE <= [0.1515, 0.6675, 0.8097, 1.7200]
+- Dataset 2 : RMSE <= [0.0732, 0.0963, 0.3812, 0.4778]
 
 ## Following the Correct Algorithm
 
