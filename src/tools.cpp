@@ -14,8 +14,8 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
                               const vector<VectorXd> &ground_truth) {
 	VectorXd rms_error(4);
   	rms_error << 0,0,0,0;
-  	if(estimations.size() != ground_truth.size()|| estimations.size() == 0)
-    {
+  	if((estimations.size() != ground_truth.size())||ground_truth.size()==0 || estimations.size() == 0)
+    	{
    	 	cout<< "Invalid estimation or ground_truth data" <<endl;
     	return rms_error;
 	}
@@ -26,7 +26,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
         diff = diff.array()*diff.array();
         rms_error += diff;
      }
-  	  unsigned int n = estimations.size();
+      unsigned int n = estimations.size();
       rms_error = rms_error / n;
       rms_error = rms_error.array().sqrt();
       return rms_error;
