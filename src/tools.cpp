@@ -41,7 +41,6 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
         rms_error += diff;
 
     	}
-      unsigned int n = estimations.size();
 
       rms_error = rms_error / n;
       rms_error = rms_error.array().sqrt();
